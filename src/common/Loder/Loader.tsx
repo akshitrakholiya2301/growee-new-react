@@ -1,5 +1,5 @@
 import React from 'react'
-import logo_color from "../../assets/img/logo.png"
+import logo_color from "../../assets/img/svg/Kids Kommune Primary Logo - Transparent.svg"
 
 const Loader = (props:any) => {
   return (
