@@ -1,0 +1,81 @@
+/*
+Table of Contents
+
+Name             : Gawee
+Author           : DexignZone
+Author Portfolio : https://themeforest.net/user/dexignzone/portfolio
+
+
+Table of Sass Contents
+
+1. Abstracts
+
+	_inheritance
+	_mixin
+	_variable
+
+
+2. Global/Base	
+
+	_framework
+	_reset
+
+
+3. Preloader	
+
+
+4. Page
+
+	_account
+	_apply-job
+	_company
+	_home
+	_messages
+	_messages-list
+	_notifications-app
+	_onboading
+	_profile
+	_sidebarmenu
+	_welcome
+
+
+5. Layout
+
+	_color-theme
+	_version-dark
+	
+5. Components
+	_navbar
+
+*/
+
+
+////////////////////
+// Abstracts
+////////////////////
+@import "./abstracts/abstracts";
+
+////////////////////
+// Base
+////////////////////
+@import "./base/base";
+
+////////////////////
+// Preloader
+////////////////////
+@import "./preloader";
+
+////////////////////
+// All Pages
+////////////////////
+@import "./pages/pages";
+
+////////////////////
+// Layout
+////////////////////
+@import "./layout/layout";
+
+////////////////////
+// Components
+////////////////////
+@import "./components/components";

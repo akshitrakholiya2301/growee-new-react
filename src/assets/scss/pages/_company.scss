@@ -1,0 +1,158 @@
+/* Company */
+.dz-banner{
+    height: 35vh;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+	z-index: -1;
+	&:after{
+		content:"";
+		position:absolute;
+		top:0;
+		height:100px;
+		width:100%;
+		left:0;
+		background: -moz-linear-gradient(top, rgba(251,247,255,1) 0%, rgba(251,247,255,0) 100%);
+		background: -webkit-linear-gradient(top, rgba(251,247,255,1) 0%,rgba(251,247,255,0) 100%);
+		background: linear-gradient(to bottom, rgba(251,247,255,1) 0%,rgba(251,247,255,0) 100%);
+	}
+}
+.company-info{
+	text-align:center;
+	margin-top: calc(35vh - 125px);
+	
+	.company-logo{
+		background:#d3d3d3;
+		width:92px;
+		height:92px;
+		border-radius:$border-radius;
+		overflow:hidden;
+		margin-left:auto;
+		margin-right:auto;
+		
+		img{
+			width:100%;
+		}
+	}
+}
+.rating-bar{
+	.progressbar{
+		background:rgba(#ff9838, 0.2);
+		border-radius:2px;
+		
+		span{
+			background:#ff9838;
+		}
+		
+	}
+	.rating-no{
+		font-size: 45px;
+		margin-top: -5px;
+		margin-bottom: 5px;
+		line-height: 45px;
+		font-weight: 400;
+		text-align: center;
+	}
+	.number{
+		display: block;
+		text-align: center;
+		font-size: 14px;
+		color: #000;
+		opacity: 0.8;
+		letter-spacing: 1px;
+		
+	}
+	.stars{
+		text-align:center;
+		display: flex;
+		justify-content: center;
+		margin-bottom: 5px;
+	
+		i{
+			color: #999;
+			font-size: 16px;
+			margin: 0 2px;
+			
+			&.fa-star{
+				color:$warning;
+			}
+		}
+	}
+}
+.review-list{
+	margin: 0;
+		
+	ul{
+		background:transparent;
+		
+		&:after,
+		&:before{
+			content:none;
+		}
+		li{
+			.item-link{
+				padding-left:0;
+				.item-media{
+					width: 40px;
+					margin-top: 5px;
+	
+					img{
+						width:100%;
+						border-radius: 45px;
+					}
+				}
+				.item-inner{
+					padding-right:0;
+					
+					.item-title-row{
+						padding-right:0;
+						.item-title{
+							font-weight:600;
+						}
+						
+						.stars{
+							text-align:center;
+							display: flex;
+							justify-content: center;
+							margin-bottom: 5px;
+						
+							i{
+								color: #999;
+								font-size: 14px;
+								margin: 0 1px;
+								
+								&.fa-star{
+									color:$warning;
+								}
+							}
+						}
+						&:before{
+							content:none;
+							
+						}
+					}
+					.item-subtitle{
+						font-size: 12px;
+						margin-bottom: 5px;
+						opacity: 0.7;
+					}
+					.item-text{
+						font-size: 14px;
+						color: #000;
+					}
+					
+				}
+			}
+		
+		}
+	
+	}
+}
+.available-job{
+	display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    border-radius: $border-radius;
+    justify-content: space-between;
+}

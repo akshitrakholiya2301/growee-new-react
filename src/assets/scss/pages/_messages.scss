@@ -1,0 +1,32 @@
+/* Message */
+.messages{
+	background:var(--f7-theme-color-light);
+}
+.message-sent{
+	.message-bubble{
+		font-size: 15px;
+		padding: 15px;
+		border-radius: $border-radius 0 0 $border-radius;
+	}
+	&.message-tail .message-bubble{
+		border-radius:$border-radius 0px 0px $border-radius;
+	}
+	&.message-first .message-bubble{
+		border-radius:$border-radius $border-radius 0px $border-radius;
+	}
+}
+.message-received{
+	.message-bubble{
+		border-radius: 0 $border-radius $border-radius 0;
+		padding: 15px;
+		background: #818181;
+		color: #fff;
+		font-size: 15px;
+	}
+	&.message-tail .message-bubble{
+		border-radius:0 $border-radius $border-radius 0;
+	}
+	&.message-first .message-bubble{
+		border-radius:$border-radius $border-radius $border-radius 0;
+	}
+}

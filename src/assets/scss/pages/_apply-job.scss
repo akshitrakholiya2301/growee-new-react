@@ -1,0 +1,154 @@
+/* Apply Job */
+.job-title-bar{
+	.navbar-bg{
+		background:var(--f7-theme-color-light);
+		
+		&:before{
+			content:none;
+		}
+	}
+	.title{
+		opacity: 1;
+		display: flex;
+		align-items: center;
+		font-size: 16px;
+		color: #696767;
+		font-weight: 500;
+		margin-left: 0;
+
+		img{
+			margin-right: 8px;
+			width: 28px;
+			height: 28px;
+		}
+	}
+	&.navbar a.link{
+		padding: 0 15px 0 30px;
+	}
+}
+.job-tag{
+	.button{
+		display: inline-block;
+		border-radius: 4px;
+		border-width: 1px;
+		height: 30px;
+		line-height: 28px;
+		padding: 0 15px;
+		margin-right: 5px;
+	}	
+}
+.job-title{
+	.title{
+		font-size:18px;
+		margin-top:0;
+		margin-bottom:5px;
+		color:#313131;
+		font-weight: 600;
+	}
+	p{
+		font-size:14px;
+		color:#000;
+		font-weight: 400;
+		margin-top:0;
+		margin-bottom:0;
+	}
+}
+.job-salary{
+	display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid rgba(0,0,0,0.05);
+    padding: 12px 0;
+    border-width: 1px 0 1px 0;
+	
+	.title{
+		font-size:18px;
+		margin-top:0;
+		margin-bottom:0;
+		color:#313131;
+		font-weight: 600;
+	}
+	p{
+		font-size:14px;
+		color:#9d9d9d;
+		font-weight: 400;
+		margin-top:0;
+		margin-bottom:0;
+	}
+}
+.job-tabs .toolbar-inner a{
+	text-transform:capitalize;
+	font-size: 16px;
+}
+.job-details{
+	h4{
+		margin-top:0;
+		margin-bottom:15px;
+		font-size:18px;
+		color:#313131;
+		font-weight:600;
+	}
+	p{
+		font-size:14px;
+		line-height:1.3;
+		color:#313131;
+		margin-top:0;
+		margin-bottom:15px;
+	}
+}
+.check-list{
+	margin:0;
+	padding:0;
+	
+	li{
+		padding:5px 0;
+		font-size:14px;
+		color:#313131;
+		display: block;
+		
+		i{
+			color:var(--f7-theme-color);
+		}
+	}
+}
+.job-tabs + .tabs-swipeable-wrap{
+	height:auto;
+}
+.job-tabs{
+	&.tabbar-scrollable{
+		.link, 
+		.tab-link{
+			padding: 0 15px;
+			text-transform: uppercase;
+			font-weight: 600;
+			font-size: 15px;
+		}
+	}
+}
+.job-bookmark.button{
+	color:#000;
+	i{
+		display:inline-block;
+		transform:scale(1.8);
+		-moz-transform:scale(1.8);
+		-webkit-transform:scale(1.8);
+		-ms-transform:scale(1.8);
+		-o-transform:scale(1.8);
+	}
+	input,	
+	.fa-bookmark{
+		display:none;
+	}
+	.fa-bookmark-o{
+		color:#000;
+	}
+	&.active{
+		.fa-bookmark{
+			color:$warning;
+			display:inline-block;
+		}
+		.fa-bookmark-o{
+			display:none;
+		}
+	}
+}

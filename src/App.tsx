@@ -1,26 +1,37 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Loader from './common/Loder/Loader';
+import './assets/css/style.css'
+import { RootState } from './redux/store';
+import { connect } from 'react-redux';
+import { loading } from './redux/Loder/loader.action';
+import AppRouter from './routes';
+function App(props:any) {
+  useEffect(() => {
+    props.loading(true);
+ setTimeout(() => {
+  props.loading(false);
+ }, 2000);
+  }, [])
+  
 
-function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+   
+        <>
+        <Loader loading={props.loaderReducer.loading} />
+        <AppRouter />
+        </>
     </div>
   );
 }
 
-export default App;
+const mapStateToProps = (state: RootState) => {
+  return { loaderReducer: state.loaderReducer };
+};
+
+const mapDispatchToProps =  {
+  loading
+ };
+export default connect(mapStateToProps, mapDispatchToProps)(App);

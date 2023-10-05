@@ -1,0 +1,125 @@
+/* Theme Dark */
+.dark{
+	h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+		color: #fff;
+	}
+	
+	.page, 
+	.page-content,
+	body,
+	.messages,
+	.navbar-style-1.navbar .navbar-bg,
+	.tab-style-1,
+	.footer-button,
+	.navbar-style-1.navbar,
+	.swipe-handler,
+	.photo-browser-page .toolbar,
+	.photo-browser-swiper-container{
+		background:#110021;
+	}
+	.color-sheet,
+	.job-bookmark.button,
+	.navbar.navbar-style-1 .navbar-inner .link.back,
+	.form-elements ul .item-content .item-inner .item-input-wrap .form-control{
+		background-color: #201030;
+    }
+	
+	.btn-link{
+		color: #fff;
+	}
+	.profile-panel .user-image{
+		border-color: #110021;
+	}
+	.tag-input{
+		background-color: #201030;
+		color: #fff;
+		border: 1px solid #423434;
+	}
+	.resume-area:nth-child(2n){
+		border-color: #384846;
+	}
+	.recent-jobs-list.style-2 ul li{
+		background-color: #201030;
+		border: 1px solid #423434;
+	}
+	
+	.job-salary,
+	.recent-jobs-list ul .item-content,
+	.tab-style-1 .toolbar-inner{
+		border-color:#29173b;
+	}
+	select,.resume-language,
+	.profile-panel,
+	.profile-panel .info,
+	.navbar.navbar-style-1,
+	input.dz-form-control,
+	textarea.form-control {
+		border-color: rgba(255,255,255,0.2);
+	}
+	
+	.text-black,
+	.color-sheet i,
+	.navbar a.link,
+	.job-title p,
+	.job-details h4,
+	.job-salary .title,
+	.job-title .title,
+	.post-card .price a,
+	.post-card .info .title a,
+	.profile-box .info span,
+	.noti-area .item-title,
+	.profile-box .info .title,
+	.dark-light li.demo-theme-picker,
+	.navbar .navbar-inner .title,
+	.recent-jobs-list ul .item-content .item-inner .item-title-row .bookmark-btn .fa-bookmark-o,
+	.form-elements ul .item-content .item-inner .item-input-wrap .form-control, .post-card .card-media .title{
+		color:#ffffff;
+	}
+	
+	.check-list li,
+	.job-details p,
+	.counter-box p,
+	.post-card .info p,
+	.profile-info .info p,
+	.theme-color-list li span,
+	.search-list-bar .item-content .item-inner .item-text,
+	.form-elements ul .item-content .item-inner .item-input-wrap .form-control::placeholder{
+		color:#7e7587;
+	}
+	.navbar a.link [fill],
+	.navbar a.link path,
+	.navbar.navbar-style-1 .navbar-inner .link.back [fill],
+	.navbar.navbar-style-1 .navbar-inner .link.back path{
+ 		fill: #fff;
+	}
+}
+
+.ios .dark,
+.ios.dark {
+	--f7-text-color: #fff;
+	--f7-bars-bg-color: #121212;
+	--f7-bars-bg-color-rgb: 22, 22, 22;
+	--f7-bars-border-color: rgba(255, 255, 255, 0.16);
+    --f7-page-bg-color: #110021;
+}
+:root .dark,
+:root.dark {
+	--f7-bars-text-color: #fff;
+	--f7-block-title-text-color: #fff;
+	--f7-block-strong-border-color: rgba(255, 255, 255, 0.15);
+	--f7-block-title-medium-text-color: #fff;
+	--f7-block-title-large-text-color: #fff;
+	--f7-block-strong-bg-color: #201030;
+	--f7-list-button-border-color: rgba(255, 255, 255, 0.15);
+	--f7-list-bg-color: #201030;
+	--f7-list-border-color: rgba(255, 255, 255, 0.15);
+	--f7-list-item-border-color: rgba(255, 255, 255, 0.15);
+	--f7-list-item-divider-border-color: rgba(255, 255, 255, 0.15);
+	--f7-list-item-divider-bg-color: #232323;
+	--f7-list-group-title-bg-color: #232323;
+	--f7-list-chevron-icon-color: rgba(255, 255, 255, 0.3);
+	--f7-card-bg-color: #201030;
+	--f7-bars-bg-color: #201030;
+	--f7-theme-color-light: #110021;
+	--f7-text-color: #fff;
+}

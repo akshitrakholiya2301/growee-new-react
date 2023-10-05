@@ -1,0 +1,58 @@
+.button{
+	border-radius:$border-radius;
+	height: 45px;
+	line-height: 45px;
+	letter-spacing: 0;
+	&.button-large{
+		font-size: 16px;
+		padding: 20px 30px;
+		height: auto;
+		line-height: 1.2;
+	}
+	&.button-outline{
+		border-width: 1px;
+	}
+}
+
+.tag{
+	font-size: 14px;
+	padding: 18px 25px;
+	text-transform: capitalize;
+	font-weight: 500;
+	height: auto;
+	line-height: 1.4;
+}
+.tag-input{
+	background-color: #e9dbff;
+	color: #000;
+	padding: 10px 12px;
+	border-radius: 8px;
+	font-size: 0.875rem;
+	display: inline-block;
+	margin-right: 6px;
+	margin-bottom: 10px;
+	i{
+		margin-right: 6px;
+	}
+}
+.btn-link{
+	color: #212121;
+    font-weight: 600;
+    font-size: 1.25rem;
+	display: block;
+	text-align: center;
+	margin: 10px 0;
+	i{
+		margin-left: 10px;
+		color: #c5b6b6;
+	}
+}
+
+.button-link{
+	color: $primary;
+    font-weight: 500;
+    font-size: 1rem;
+	display: block;
+	text-align: center;
+	margin: 10px 0;
+}

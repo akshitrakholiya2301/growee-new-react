@@ -1,0 +1,116 @@
+/* Login Register Account */
+.account-area{
+	.logo {
+		margin: 30px auto 15px;
+		text-align: center;
+			
+		img {
+			width:150px;
+		}
+	}
+	.block{
+	    padding: 0;
+		margin: 25px 0;
+	}
+	.swiper-slide,
+	.swiper-wrapper,
+	.tabs-swipeable-wrap{
+		height:auto;
+	}
+	
+}
+.tab-style-1{
+	margin: 0;
+    width: auto;
+	background:var(--f7-theme-color-light);
+	&.mx-0{
+		margin-left:0;
+		margin-right:0;
+	}
+	&:after{
+		content:none;
+	}
+	.toolbar-inner {
+		border-bottom:1px solid #ededed;
+		
+		.tab-link{
+			&.job1{
+				color:var(--f7-theme-color);
+			}
+			&.job2{
+				color:#6798ff;
+				
+				&.tab-link-active + .tab-link-highlight{
+					background:#6798ff;
+				}
+			}
+		}
+		.tab-link-highlight{
+			top:auto;
+			bottom:0;
+		}
+	}
+}
+.job2{
+	color:#6798ff;
+	
+	& + .tab-link-highlight{
+		background:var(--f7-theme-color);
+	}
+}
+
+.form-elements{
+	.dz-title{
+		font-weight:500;
+	}
+	.list{
+		margin-top:0;
+		margin-bottom:10px;
+	}
+	ul{
+		background:transparent;
+		&:before,
+		&:after{
+			content:none;
+		}
+		.item-content{
+			padding:0;
+			
+			.item-inner{
+				padding:0;
+				
+				.item-input-wrap{
+					margin-bottom:20px;
+					&:after{
+						content:none  !important;
+					}
+					.form-control{
+						background: #fff;
+						height: 60px;
+						padding: 15px 25px;
+						border-radius: $border-radius;
+						border:1px solid transparent;
+						
+						&:active,
+						&:focus{
+							border:1px solid $primary;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.social-account{
+    display: flex;
+    align-items: center;
+	a{
+		width: 36px;
+		display: inline-block;
+		margin-left: 20px;
+		
+		img{
+			width:100%;
+		}
+	}
+}

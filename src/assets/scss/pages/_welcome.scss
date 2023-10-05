@@ -1,0 +1,61 @@
+/* Welcome Page */
+.welcome-area{
+	flex-direction: column;
+	display: flex;
+	height: 100%;
+}
+.welcome-logo{
+	margin: 30px auto auto;
+    text-align: center;
+	    
+	img{
+		width:100px;
+	}
+}
+.join-area{
+	padding:0 0 30px;
+	margin: auto 0 0;
+		
+	.get-started{
+		margin-bottom:20px;
+		font-weight: 500;
+	}
+	.card{
+		box-shadow: none;
+		padding: 20px;
+		border-radius: $border-radius;
+		margin: 0 0 20px 0;
+		color: #fff;
+		position:relative;
+		display:block;
+		
+		&:last-child{
+			margin-bottom:0;
+		}
+		
+		&:after{
+			content: "\f101";
+			font-family: "Font Awesome 5 Free";
+			font-size: 18px;
+			font-weight: 700;
+			position: absolute;
+			right: 25px;
+			margin-top: -9px;
+			line-height: 1;
+			top: 50%;
+		}
+		h5{
+			font-size:16px;
+			margin-top:0;
+			margin-bottom:5px;
+			color: #fff;
+		}
+		p{
+			margin-bottom: 0;
+			margin-top: 0;
+			font-size: 14px;
+			line-height: 1.4;
+			max-width: 200px;
+		}
+	}
+}
